@@ -1,0 +1,27 @@
+Hardware Setup:
+
+Connect Power and Ground:
+
+Connect the VCC pin of the SX1262 module to the 3.3V output on the Arduino Uno.
+Connect the GND pin of the SX1262 module to the GND pin on the Arduino Uno.
+Connect SPI Pins:
+
+Connect the SX1262 module's SCK pin to Arduino Uno's pin 13.
+Connect the SX1262 module's MISO pin to Arduino Uno's pin 12.
+Connect the SX1262 module's MOSI pin to Arduino Uno's pin 11.
+Connect the SX1262 module's NSS (Chip Select) pin to any digital pin on the Arduino Uno (for example, pin 10). Note the pin number you choose, as you'll need it in your Arduino sketch.
+Connect the SX1262 module's BUSY pin to any digital pin on the Arduino Uno (for example, pin 2). This pin is used to check if the module is busy or idle.
+Connect Reset Pin:
+
+Connect the SX1262 module's RST pin to any digital pin on the Arduino Uno (for example, pin 9). This pin is used to reset the module.
+Connect Antenna:
+
+Connect an appropriate antenna to the SX1262 module. Antenna selection depends on the frequency you are operating on.
+Connect Power Supply:
+
+Ensure the Arduino Uno is powered properly, either via USB or an external power supply.
+Software Setup:
+
+Install Libraries:
+
+You need to install the necessary libraries for SX1262. You can use the Arduino Library Manager to install libraries like "RadioLib" or "SX126x-Arduino." Open the Arduino IDE, go to Sketch -> Include Library -> Manage Libraries, and search for the appropriate library.
